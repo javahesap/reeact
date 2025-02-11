@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.dashboard {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.users-list, .products-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user, .product {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+h3 {
+  font-size: 18px;
+}
