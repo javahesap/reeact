@@ -18,10 +18,10 @@ export const setUsers = (users) => {
 
 
 
-export const setRepos= (users) => {
+export const setRepos= (repos) => {
   return {
     type: 'SET_REPOS',
-    payload: users,
+    payload: repos,
   };
 };
 // Fetch Products from API
@@ -46,6 +46,6 @@ export const fetchUsers = () => {
 export const fetchRepos = () => {
   return async (dispatch) => {
     const response = await axios.get('https://api.github.com/users/hadley/orgs');
-    dispatch(setUsers(response.data));
+    dispatch(setRepos(response.data));
   };
 };

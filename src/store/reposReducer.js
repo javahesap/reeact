@@ -1,14 +1,14 @@
 const initialState = {
-  users: [],
+  repos: [],
   loading: true,
 };
 
-export const usersReducer = (state = initialState, action) => {
+export const reposReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'SET_USERS':
+    case 'SET_REPOS':
       return {
         ...state,
-        users: action.payload,
+        repos: action.payload,
         loading: false,
       };
     default:

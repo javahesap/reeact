@@ -4,9 +4,8 @@ import { fetchRepos } from '../store/actions';
 
 function RepoPage() {
   const dispatch = useDispatch();
-  const repos = useSelector((state) => state.users.users);
-  const loading = useSelector((state) => state.users.loading);
-
+  const repos = useSelector((state) => state.repos.repos);  // state.repos.repos olarak güncellendi
+  const loading = useSelector((state) => state.repos.loading);  // state.repos.loading
   useEffect(() => {
     dispatch(fetchRepos());
   }, [dispatch]);
@@ -33,3 +32,6 @@ function RepoPage() {
 }
 
 export default RepoPage;
+
+
+
