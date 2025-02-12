@@ -1,0 +1,27 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.products-list, .users-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card, .user-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.product-card img, .user-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
