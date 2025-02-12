@@ -9,6 +9,7 @@ function Sidebar() {
       <ul>
         <li><Link to="/products">Products</Link></li>
         <li><Link to="/users">Users</Link></li>
+        <li><Link to="/repo">Repolar</Link></li>
       </ul>
     </div>
   );

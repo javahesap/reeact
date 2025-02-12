@@ -16,6 +16,14 @@ export const setUsers = (users) => {
   };
 };
 
+
+
+export const setRepos= (users) => {
+  return {
+    type: 'SET_REPOS',
+    payload: users,
+  };
+};
 // Fetch Products from API
 export const fetchProducts = () => {
   return async (dispatch) => {
@@ -29,5 +37,15 @@ export const fetchUsers = () => {
   return async (dispatch) => {
     const response = await axios.get('https://dummyjson.com/users');
     dispatch(setUsers(response.data.users));
+  };
+};
+
+
+
+
+export const fetchRepos = () => {
+  return async (dispatch) => {
+    const response = await axios.get('https://api.github.com/users/hadley/orgs');
+    dispatch(setUsers(response.data));
   };
 };
