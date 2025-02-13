@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import withLoading from '../hoc/withLoading';
+import CustomLoader from '../hoc/CustomLoader';
 import { fetchProducts } from '../store/actions';
 
 function ProductsPage() {
@@ -24,4 +25,11 @@ function ProductsPage() {
 }
 
 // ✅ HOC'u fetchProducts ile birlikte kullan
-export default withLoading(ProductsPage, fetchProducts, (state) => state.products);
+//export default withLoading(ProductsPage, fetchProducts, (state) => state.products);
+
+
+export default withLoading(ProductsPage, fetchProducts, (state) => state.products, {
+  loadingMessage: "Ürünler yükleniyor yükleniyor...",
+  LoadingComponent: CustomLoader,
+  minLoadingTime: 2000
+});
