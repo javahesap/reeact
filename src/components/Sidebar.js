@@ -12,6 +12,7 @@ function Sidebar() {
         <li><Link to="/repo">Repolar</Link></li>
         <li><Link to="/funtionalcomponet">Fonctional Komponet </Link></li>
         <li><Link to="/classcomponet">Class komponet </Link></li>
+        <li><Link to="/stateornek">State Örnek </Link></li>
       </ul>
     </div>
   );
