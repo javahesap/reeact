@@ -8,6 +8,9 @@ import Greeting from './components/Greeting.js';
 import Merhaba from './components/Merhaba.js';
 import Modal from './components/Modal';
 import Counter from './components/Counter.js';
+import Useeffectornek from './components/Useeffectkullanim';
+import Listloop from './components/listloop.js';
+
 import './App.css';
 
 
@@ -25,6 +28,8 @@ function App() {
             <Route path="/funtionalcomponet" element={<Greeting name="beşir" />} />     
             <Route path="/classcomponet" element={<Merhaba name="beşir" />} />
             <Route path="/stateornek" element={<Counter  />} />
+            <Route path="/useeffectornek" element={<Useeffectornek  />} />
+            <Route path="/listeleme" element={<Listloop  />} />
           </Routes>
         </div>
       </div>

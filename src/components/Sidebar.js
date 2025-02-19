@@ -13,6 +13,8 @@ function Sidebar() {
         <li><Link to="/funtionalcomponet">Fonctional Komponet </Link></li>
         <li><Link to="/classcomponet">Class komponet </Link></li>
         <li><Link to="/stateornek">State Örnek </Link></li>
+        <li><Link to="/useeffectornek">Useeffcet </Link></li>
+        <li><Link to="/listeleme">Listeleme </Link></li>
       </ul>
     </div>
   );
