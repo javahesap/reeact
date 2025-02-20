@@ -15,6 +15,9 @@ function Sidebar() {
         <li><Link to="/stateornek">State Örnek </Link></li>
         <li><Link to="/useeffectornek">Useeffcet </Link></li>
         <li><Link to="/listeleme">Listeleme </Link></li>
+        <li><Link to="/listeleme2">Listeleme2 </Link></li>
+        <li><Link to="/oyun">Oyun puzzel</Link></li>
+        <li><Link to="/game2048"> Game2048</Link></li>
       </ul>
     </div>
   );
